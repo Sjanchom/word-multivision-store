@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewBag.Title = "STORE";
+}
+
+<h2>STORE</h2>
+<style>
+ 
+</style>
+
+<body>
+
+    <div class="Search" style="position:relative; top: 10px;">
+        <input type="text" id="employee" class="form-control input-sm" placeholder="ค้นหาอุปกรณ์" required data-validation-required-message="Year is required">
+      
+    
+      </div>
+    <div class="button_group" style="position:absolute; width:400px; top: 121px; left: 870px;">
+        <button id="bt-add" type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal" >เพิ่มอุปกรณ์</button>
+        <button id="bt-uppdate" class="btn btn-default" data-toggle="modal" data-target="#myModal">อัพเดทสินค้า</button>
+        <button id="bt-print" class="btn btn-default" data-toggle="modal" data-target="#myModal">พิมพ์รายการอุปกรณ์</button>
+    </div>
+
+        <div class="container" style="position:relative; top: 25px;">
+         <table id="Table" class="table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="checkall" /></th>
+                    <th>รหัสอุปกรณ์</th>
+                    <th>ชื่ออุปกรณ์</th>
+                    <th>จำนวน</th>
+                    <th>        </th>
+                   
+
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0001</td>
+                    <td>สายไฟ</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px;">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0002</td>
+                    <td>จานดาวเทียม</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0003</td>
+                    <td>น๊อต</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0003</td>
+                    <td>น๊อต</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0003</td>
+                    <td>น๊อต</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0003</td>
+                    <td>น๊อต</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0003</td>
+                    <td>น๊อต</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0003</td>
+                    <td>น๊อต</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox" class="checkthis" /></td>
+                    <td>0003</td>
+                    <td>น๊อต</td>
+                    <td>360</td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">แก้ไข</button>
+                    </td>
+                    <td style="text-align:center; width:100px">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">ลบ</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    @*=======================================  model Add =========================================*@
+    <div  class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="modal-title" id="exampleModalLabel">เพิ่มอุปกรณ์</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-control-label">ชื่ออุปกรณ์:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">จำนวน:</label>
+                            <input class="form-control" id="message-text" >
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
